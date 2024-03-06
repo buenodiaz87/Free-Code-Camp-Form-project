@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <header>
+  <h1 id="title"> Application</h1>
+  </header>
+  <body>
+      <link rel="stylesheet" href="form.css">
+    <p align ="center" id="description"> Thank you for applying</p>
+  
+ <form id="survey-form">
+   <div class="input-headings">
+     <p align="center">
+   <label for="name" id="name-label">Name</label>
+   <input id="name" type="text" name="name" placeholder="name" class="form-input" required></input>
+  <br>
+  <label for="email" id="email-label">E-mail</label>
+  <input id="email" type="email" name="email" placeholder="youremail@gmail.com" class="form-input" required></input>
+<br>
+<label for="number" id="number-label">Phone Number</label>
+<input id="number" type="number" name="number" min="000000000" max="999999999" placeholder="123456789" class="form-input" required></input>
+<br>
+<label for="dropdown" id="position">Select the position you are applying for:</label>
+<select id="dropdown" class="form-input">
+  <option value="regular">Regular Van</option>
+  <option value="stepvan">Step Van </option>
+  
+</select>
+<br>
+<br>
+<label for="cerified" id="yes/no">Are you DOT Cerfied?</label><br>
+<input id="answer" type="radio" id="yes" name="dotcertified" value="yes"><label for="answer">Yes</label><br>
+<input id="answer" type="radio" id="no" name="dotcertified" value="no">
+<label for="answer">No</lable>
+<br>
+<br>
+<label for="age" >Are you at least 21 years old?</label>
+<br>
+<input id="age" type="checkbox" name="age" value="yes"><label for="age">yes</label><br>
+<input id="age" type="checkbox" name="age" value="no"><lable for="age">no</label><br>
+<label id="text-area">Additional Comments</label><br>
+<textarea id="text-area" name="instructions" rows="5" cols="40"></textarea>
+<br><input id="submit" class="submit-button" type="submit" value="submit">
+  </p>
+  </div>
+</body>
+</html>
